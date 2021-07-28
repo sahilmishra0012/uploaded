@@ -18,6 +18,42 @@ public class CreateKuduTable {
         KuduClient client = new KuduClient.KuduClientBuilder(KUDU_MASTERS).build();
 
         try {
+            createExampleTable(client);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Table already exist or has creation problem.");
+        }
+        try {
+            createExampleTable1(client);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Table already exist or has creation problem.");
+        }
+        try {
+            createExampleTable2(client);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Table already exist or has creation problem.");
+        }
+        try {
+            createExampleTable3(client);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Table already exist or has creation problem.");
+        }
+        try {
+            createExampleTable4(client);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Table already exist or has creation problem.");
+        }
+        try {
+            createExampleTable5(client);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Table already exist or has creation problem.");
+        }
+        try {
             createExampleTable6(client);
         } catch (Exception e) {
             e.printStackTrace();
